@@ -3,7 +3,7 @@ const playersRouter = require('express').Router()
 const playersController = require('../controllers/ballersController');
 const playersViewController = require('../controllers/ballersViewController');
 
-const quoteDb = require('../models/players');
+const playersDb = require('../models/players');
 
 function sendError(err, req, res, next) {
   console.log('I send errors');

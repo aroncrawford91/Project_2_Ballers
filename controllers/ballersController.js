@@ -2,7 +2,7 @@ const ballersDb = require('../models/players');
 
 function getAll(req,res,next){
   console.log('query the DB');
-  ballerDb.getAllPlayers()
+  playersDb.getAllPlayers()
   .then(data =>{
     console.log('Queried the DB and got' + data.length + 'results');
     res.locals.players = data;
@@ -15,7 +15,7 @@ function getAll(req,res,next){
 
 function getOne(req, res, next) {
   console.log(req.params);
-  quoteDb.getOnePlayers(req.params.id)
+  playersDb.getOnePlayers(req.params.id)
   .then(data => {
     console.log(data);
     res.locals.quote = data;
@@ -27,7 +27,7 @@ function getOne(req, res, next) {
 
 function create(req, res, next) {
   console.log(req.body);
-  quoteDb.createPlayers(req.body)
+  playersDb.createPlayers(req.body)
   .then(data => {
     console.log(data);
     res.locals.quote = data;
@@ -37,7 +37,7 @@ function create(req, res, next) {
 
 function destroy(req, res, next) {
   console.log('Going to delete');
-  quoteDb.destroyPlayers(req.params.id)
+  playersDb.destroyPlayers(req.params.id)
   .then(() => {
     next()
   })
