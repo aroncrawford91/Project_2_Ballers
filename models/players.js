@@ -18,7 +18,7 @@ function getOnePlayers(id) {
 }
 
 
-function createPlayers(players) {
+function createPlayers(player) {
   const queryPromise = db.one(`
     INSERT INTO players (name,brand,shoe,price,shoepic,playerpic)
     VALUES ($/name/, $/brand/,$/shoe/,$/price/,$/shoepic/,$/playerpic/)
@@ -29,7 +29,7 @@ function createPlayers(players) {
 }
 
 
-function updatePlayers(quote) {
+function updatePlayers(player) {
   const queryPromise = db.one(`
     UPDATE players
     SET shoe = $/shoe/, price = $/price/, shoepic = $/shoepic/

@@ -1,11 +1,11 @@
 function sendPlayers(req,res) {
-  res.render('quotes/index',{
+  res.render('players/index',{
     players: res.locals.players
   });
 }
 
 function sendOnePlayers(req,res) {
-  res.render('quotes/quote', {
+  res.render('players/player', {
     players: res.locals.players
   });
 }
