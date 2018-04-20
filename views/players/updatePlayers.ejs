@@ -1,0 +1,21 @@
+<% include ../partials/boilerplate %>
+<form class="new-players" action="/players/<%= players.athlete_id %>?_method=PUT" method="post">
+  <h2>Update Players with id: <%= players.athlete_id %></h2>
+  <label>
+    <h3>Content</h3>
+    <textarea name="content" rows="8" cols="80"><%= players.content %></textarea>
+  </label>
+  <label>
+    <h3>Author</h3>
+    <input value="<%= players.name %>" type="text" name="name" value="">
+  </label>
+  <label>
+    <h3>Shoe</h3>
+    <input value="<%= players.shoes %>" type="text" name="shoes" value="">
+  </label>
+  <button type="submit">Update</button>
+</form>
+<form action="/players/<%= players.athlete_id %>?_method=DELETE" method="POST">
+  <button type="submit" name="button">Delete Player</button>
+</form>
+<% include ../partials/end %>

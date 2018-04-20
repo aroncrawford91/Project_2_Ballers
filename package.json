@@ -1,0 +1,30 @@
+{
+  "name": "project_2_ballers",
+  "version": "1.0.0",
+  "description": "## overview Ballers is a website to combine the world of basketball players, sneaker heads and fans of the nba together. Users will have the ability to pick a brand, find basketball players signed to the selected brand and the shoes they wear and their stats for the 2017-2018 nba season.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "pg-promise": "^8.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aroncrawford91/Project_2_Ballers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aroncrawford91/Project_2_Ballers/issues"
+  },
+  "homepage": "https://github.com/aroncrawford91/Project_2_Ballers#readme"
+}
