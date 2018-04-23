@@ -1,4 +1,4 @@
-\c ballers_db
+ ballers_db
 
 DROP TABLE IF EXISTS players;
 
