@@ -1,10 +1,9 @@
 const db = require('../config/connection');
 
 function getAllPlayers() {
-  const queryPromise = db.any(`
+  const queryPromise = db.manyOrNone(`
     SELECT * FROM players
-    `
-  );
+    `);
   return queryPromise;
 }
 
@@ -54,5 +53,5 @@ module.exports = {
   getOnePlayers,
   createPlayers,
   updatePlayers,
-  destroyPlayers,
+  destroyPlayers
 }

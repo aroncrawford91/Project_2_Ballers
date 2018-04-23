@@ -1,4 +1,4 @@
-const ballersDb = require('../models/players');
+const playersDb = require('../models/players');
 
 function getAll(req,res,next){
   console.log('query the DB');
@@ -18,7 +18,7 @@ function getOne(req, res, next) {
   playersDb.getOnePlayers(req.params.id)
   .then(data => {
     console.log(data);
-    res.locals.quote = data;
+    res.locals.players = data;
     next();
   }).catch(err => {
     next(err);
@@ -30,7 +30,7 @@ function create(req, res, next) {
   playersDb.createPlayers(req.body)
   .then(data => {
     console.log(data);
-    res.locals.quote = data;
+    res.locals.players = data;
     next();
   }).catch(err => next(err));
 }

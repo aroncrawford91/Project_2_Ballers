@@ -38,4 +38,9 @@ playersRouter.route('/:id')
   .put(update, playersViewController.redirectToPlayersShow)
   .delete(playersController.destroy, playersViewController.redirectToPlayersIndex, sendError);
 
+  playersRouter.route('/brand/:brandname') .get((req, res) => {
+    console.log(req.params)
+    res.status (200).send(req.params)
+  });
+
 module.exports = playersRouter;

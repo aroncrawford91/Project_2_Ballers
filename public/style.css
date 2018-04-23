@@ -9,7 +9,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background: red;
 }
 
@@ -38,12 +38,14 @@ main {
 }
 
 .players-container {
-  border: solid 5px green;
+  border: solid 5px black;
   border-radius: 20px;
   background: black;
   color: white;
   padding: 10px 15px;
   text-align: center;
+  margin-left: 20px;
+  position: relative;
 }
 
 a:hover, a {

@@ -5,7 +5,7 @@ function sendPlayers(req,res) {
 }
 
 function sendOnePlayers(req,res) {
-  res.render('players/player', {
+  res.render('players/index', {
     players: res.locals.players
   });
 }

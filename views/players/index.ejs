@@ -1,9 +1,9 @@
 <% include ../partials/boilerplate %>
 <h1>Players</h1>
 <div class="players-list">
-  <% players.forEach((players) => { %>
+  <% players.forEach((player) => { %>
   <a href="/players/<%= players.athlete_id %>">
-    <% include ../partials/single_players %>
+    <% include ../partials/single_player %>
   </a>
   <% }) %>
 </div>
