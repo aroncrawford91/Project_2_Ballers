@@ -1,13 +1,12 @@
 <div class="players-container">
-  <h2>Players: <%= players.athlete_id %></h2>
-  <p>"<%= players.content %>"</p>
   <div class="players--name">
-      <% players.forEach((player) => { %>
-  <a href="/players/<%= players.athlete_id %>">
-    <% include ../partials/single_player %>
+  <a href="/players/<%= player.athlete_id %>">
+  <h2>Players: <%= player.athlete_id %></h2>
+  <p>"<%= player.name %>"</p>
+  <img src ="<%= player.playerpic %>" >
+  <img src ="<%= player.shoepic %>" >
+
   </a>
-  <% }) %>
   </div>
-  <a href="/players/<%= players.athlete_id %>/update">Edit Players</a>
-  <%= JSON.stringify(players)%>
+  <a href="/players/<%= player.athlete_id %>/update">Edit Players</a>
 </div>

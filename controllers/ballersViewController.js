@@ -5,8 +5,8 @@ function sendPlayers(req,res) {
 }
 
 function sendOnePlayers(req,res) {
-  res.render('players/index', {
-    players: res.locals.players
+  res.render('partials/single_player', {
+    player: res.locals.player
   });
 }
 

@@ -14,11 +14,11 @@ function getAll(req,res,next){
 }
 
 function getOne(req, res, next) {
-  console.log(req.params);
+  // console.log(req.params);
   playersDb.getOnePlayers(req.params.id)
   .then(data => {
     console.log(data);
-    res.locals.players = data;
+    res.locals.player = data;
     next();
   }).catch(err => {
     next(err);
@@ -46,9 +46,20 @@ function destroy(req, res, next) {
   })
 }
 
+function edit(req, res) {
+  studentsDb.getOneStudent(req.params.id)
+    .then(data=> {
+      res.locals.student = data;
+      next();
+    })
+    .catch(err=> {
+      err:err.message
+    })
+}
 module.exports = {
   getAll: getAll,
   getOne: getOne,
   create: create,
-  destroy: destroy
+  destroy: destroy,
+  edit: edit
 };

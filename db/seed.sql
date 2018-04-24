@@ -1,8 +1,7 @@
 \c ballers_db
 
 INSERT INTO players (name,brand,shoe,price,shoepic,playerpic)
-VALUES ('Kyrie Irving','Nike','Kyrie 4','120','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE7w-Zjj8cD6KZCs1hNvcC01vWXXHJs49xgHiF0lT1djiwDimoUw','https://www.sneakerfiles.com/wp-content/uploads/2018/01/nike-kyrie-4-all-star-AQ8623-001-release-date.jpg');
-
+VALUES ('Kyrie Irving','Nike','Kyrie 4','120','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE7w-Zjj8cD6KZCs1hNvcC01vWXXHJs49xgHiF0lT1djiwDimoUw','http://www.celticshub.com/wp-content/uploads/2018/03/kryie1.jpg');
 INSERT INTO players (name,brand,shoe,price,shoepic,playerpic)
 VALUES('LeBron James','Nike','LeBron 15','185','https://www.icmshoptrend.com/wp-content/uploads/2017/12/878fbac57367f3a2c0402283eac7a540.jpg','https://thenypost.files.wordpress.com/2018/01/lebron-2.jpg?quality=90&strip=all&w=618&h=410&crop=1');
 

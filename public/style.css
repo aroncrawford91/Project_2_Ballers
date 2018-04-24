@@ -4,6 +4,15 @@ body {
   margin: 0;
 }
 
+img{
+  position: relative;
+
+    width:  400px;
+    height: 250px;
+}
+
+
+
 main {
   flex-direction: column;
   display: flex;
@@ -11,6 +20,7 @@ main {
   align-items: center;
   height: 100%;
   background: red;
+  background-image: logo.jpg;
 }
 
 .players--name {
@@ -65,6 +75,8 @@ a:hover, a {
 }
 
 nav {
+  display:flex;
+  justify-content: space-between;
   padding: 12px;
   font-size: 18px;
   font-weight: bold;
@@ -75,13 +87,14 @@ nav {
 
 nav ul {
   list-style: none;
+
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 20%;
+nav ul li {
+   display:flex;
+  justify-content:space-between;
+  align-items: stretch;
+  width: 50%;
 }
 
 form.create-players {
@@ -94,3 +107,4 @@ form.create-players button {
   display: block;
   margin: 25px auto;
 }
+

@@ -8,8 +8,7 @@ const methodOverride = require('method-override');
 
 const playersRouter = require('./routes/ballersRouter');
 
-const PORT =process.env.PORT || 3000;
-
+const PORT = 9080;
 
 const app = express();
 
