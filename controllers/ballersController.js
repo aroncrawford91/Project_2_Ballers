@@ -46,16 +46,6 @@ function destroy(req, res, next) {
   })
 }
 
-function edit(req, res) {
-  studentsDb.getOneStudent(req.params.id)
-    .then(data=> {
-      res.locals.student = data;
-      next();
-    })
-    .catch(err=> {
-      err:err.message
-    })
-}
 module.exports = {
   getAll: getAll,
   getOne: getOne,
