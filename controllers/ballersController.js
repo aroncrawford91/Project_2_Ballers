@@ -51,5 +51,4 @@ module.exports = {
   getOne: getOne,
   create: create,
   destroy: destroy,
-  edit: edit
 };
